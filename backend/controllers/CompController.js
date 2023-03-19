@@ -1,5 +1,6 @@
 const CompanyModel = require("../models/CompanyModel");
 
+//Register Companies
 const register = async (req, res) => {
   const saveComp = new CompanyModel(req.body);
   //check if email exists
@@ -16,4 +17,13 @@ const register = async (req, res) => {
   });
 };
 
-module.exports = { register };
+//Get All Companies
+const getAll = async (req, res) => {
+  const data = await CompModel.find({});
+  if (!data)
+    return res.status(200).json({ message: "No Companies To display" });
+
+  res.status(200).json(data);
+};
+
+module.exports = { register, getAll };
