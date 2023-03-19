@@ -13,8 +13,9 @@ function Login() {
 
   return (
     <>
-      <Header pageTitle="Login Page" />
-      <main className="login-main">
+      <Header />
+      <main className="main">
+        <Typography variant="h4">Login Page</Typography>
         <form onSubmit={handleSubmit} className="login-form">
           <Typography variant="h5">Login</Typography>
           <TextField
@@ -22,6 +23,7 @@ function Login() {
             label="Email"
             variant="outlined"
             type="email"
+            name="email"
             required
           />
           <TextField
@@ -29,6 +31,7 @@ function Login() {
             label="Password"
             variant="outlined"
             type="password"
+            name="password"
             required
           />
           <Button

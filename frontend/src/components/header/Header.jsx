@@ -1,9 +1,6 @@
 import { Typography } from "@mui/material";
+import { Routes, Route } from "react-router-dom";
 import "./Header.css";
-const Header = (props) => (
-  <header className="header">
-    <Typography variant="h4">{props.pageTitle}</Typography>
-  </header>
-);
+const Header = (props) => <header className="header"></header>;
 
 export default Header;
