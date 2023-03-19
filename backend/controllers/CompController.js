@@ -19,7 +19,7 @@ const register = async (req, res) => {
 
 //Get All Companies
 const getAll = async (req, res) => {
-  const data = await CompModel.find({});
+  const data = await CompanyModel.find({});
   if (!data)
     return res.status(200).json({ message: "No Companies To display" });
 

@@ -10,5 +10,7 @@ router.post("/add-job", JobController.register);
 
 //Get
 router.get("/jobs", JobController.getAll);
+router.get("/developers", DevController.getAll);
+router.get("/companies", CompController.getAll);
 
 module.exports = router;
