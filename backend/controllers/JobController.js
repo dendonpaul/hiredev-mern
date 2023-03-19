@@ -12,4 +12,4 @@ const getAll = async (req, res) => {
   res.status(200).json(data);
 };
 
-module.exports = { register };
+module.exports = { register, getAll };
