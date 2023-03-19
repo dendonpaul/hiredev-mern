@@ -3,6 +3,7 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import "./Login.css";
+import Header from "../header/Header";
 
 function Login() {
   const handleSubmit = (event) => {
@@ -11,10 +12,8 @@ function Login() {
   };
 
   return (
-    <div className="login-container">
-      <header className="login-header">
-        <Typography variant="h4">Login Header</Typography>
-      </header>
+    <>
+      <Header pageTitle="Login Page" />
       <main className="login-main">
         <form onSubmit={handleSubmit} className="login-form">
           <Typography variant="h5">Login</Typography>
@@ -45,7 +44,7 @@ function Login() {
       <footer className="login-footer">
         <Typography variant="h6">Footer</Typography>
       </footer>
-    </div>
+    </>
   );
 }
 
