@@ -44,7 +44,7 @@ function Login() {
           </Button>
         </form>
       </main>
-      <footer className="login-footer">
+      <footer className="login-footer" style={{ minHeight: "1000px" }}>
         <Typography variant="h6">Footer</Typography>
       </footer>
     </>
